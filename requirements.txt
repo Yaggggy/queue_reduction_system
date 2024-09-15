@@ -1,6 +1,5 @@
 Flask
 cmake
-dlib
 certifi
 chardet
 click
