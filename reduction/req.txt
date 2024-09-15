@@ -19,4 +19,5 @@ requests
 tqdm
 urllib3
 wincertstore
-sqlite3
+SQLAlchemy
+scipy
