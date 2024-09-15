@@ -50,8 +50,8 @@ def log_to_db(name):
     conn.close()
 
 # CSV file names
-csv_file1 = 'reduction\logfile1.csv'
-csv_file2 = 'reduction\logfile2.csv'
+csv_file1 = 'logfile1.csv'
+csv_file2 = 'logfile2.csv'
 
 # Check if the CSV files exist, if not, create them and add headers
 def init_csv_files():
@@ -86,7 +86,7 @@ def log_user(name):
 
 # Blink detection configuration
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor('reduction\shape_predictor_68_face_landmarks.dat')
+predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 
 def eye_aspect_ratio(eye):
     A = dist.euclidean(eye[1], eye[5])
